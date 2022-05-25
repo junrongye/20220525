@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大同十景</title>
+    <link rel="shortcut icon" href="img/螢幕擷取畫面 2022-05-25 005209.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgba(167, 243, 243, 0.968);">
+
+    <div id="container">
+        <header>
+            
+            <div class="banner">
+                <img src="img/螢幕擷取畫面 2022-05-25 005209.JPG" width="130px" height="130px" alt="logo">
+                <div class="title">
+                    <h1>友愛之家-大同育幼院</h1>
+                    <h2>home of love</h2>
+                </div>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.ccf.org.tw/60/about/MTMxNA">認識本院</a></li>
+                            <li><a href="index.html">大同十景</a></li>
+                            <li><a href="https://www.ccf.org.tw/60/news">活動即訊</a></li>
+                            <li><a href="https://www.ccf.org.tw/60/donation/MTMyMg">即時捐愛</a></li>
+                            <li><a href="mailto:dt@ccf.org.tw">聯絡我們</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                    
+            </div>
+            
+        </header>
+
+        <aside>
+
+        </aside>
+        <section>
+            <img class="mySlides" src="img/A1.jpg" style="display:block; margin:auto;" alt="111">
+            <img class="mySlides" src="img/A2.jpg" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/A3.jpg" style="display:block; margin:auto;" alt="111" >
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 1.5 seconds
+          }
+          </script>
+        </section>
+        <footer>
+            <p>--------------</p>
+<p>
+    民國111年
+</p>
+        </footer>
+    </div>
+</body>
+
+</html>
